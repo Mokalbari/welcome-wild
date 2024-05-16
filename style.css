@@ -76,7 +76,7 @@ body {
 
     .welcome__avatar {
       border-radius: 50%;
-      max-width: 40%;
+      max-width: max(150px, 20%);
       height: auto;
       margin-bottom: var(--size-1);
       border: 3px solid var(--clr-neutral-light);
@@ -89,7 +89,7 @@ body {
     }
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     nav {
       flex-direction: row;
     }
@@ -209,7 +209,7 @@ footer {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .articles__section {
     h2 {
       margin: var(--size-2) 0;
