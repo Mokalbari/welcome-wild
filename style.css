@@ -63,6 +63,7 @@ body {
 
     a {
       text-decoration: none;
+      color: var(--clr-neutral-light);
     }
   }
 
@@ -140,7 +141,7 @@ body {
   h2 {
     color: var(--clr-accent);
     font-size: var(--size-15);
-    margin: var(--size-1);
+    margin: var(--size-1) 0 var(--size-2) 0;
   }
 
   .about__content {
@@ -175,4 +176,9 @@ footer {
   padding: var(--size-05) var(--size-2);
   border-radius: var(--size-2);
   font-weight: var(--weight-l);
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: 200ms ease-in-out;
+  }
 }
