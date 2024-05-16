@@ -1,0 +1,24 @@
+:root {
+  --clr-accent: #a306b6;
+  --clr-neutral-light: #d9d9d9;
+  --clr-neutral-dark: #0e1111;
+
+  --font-head: "Montserrat", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+
+  --size-05: 0.5rem;
+  --size-075: 0.75rem;
+  --size-09: 0.9rem;
+  --size-1: 1rem;
+  --size-11: 1.1rem;
+  --size-12: 1.2rem;
+  --size-15: 1.5rem;
+  --size-2: 2rem;
+  --size-3: 3rem;
+  --size-5: 5rem;
+
+  --weight-xs: 300;
+  --weight-s: 400;
+  --weight-m: 600;
+  --weight-l: 800;
+}
