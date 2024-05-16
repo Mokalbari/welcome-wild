@@ -13,6 +13,7 @@
   --size-11: 1.1rem;
   --size-12: 1.2rem;
   --size-15: 1.5rem;
+  --size-17: 1.7rem;
   --size-2: 2rem;
   --size-3: 3rem;
   --size-5: 5rem;
@@ -74,16 +75,42 @@ body {
     align-items: center;
 
     .welcome__avatar {
+      border-radius: 50%;
       max-width: 40%;
+      height: auto;
       margin-bottom: var(--size-1);
       border: 3px solid var(--clr-neutral-light);
-      border-radius: 5rem;
     }
 
     h1 {
       text-align: center;
       font-family: var(--font-head);
       max-width: 15ch;
+    }
+  }
+
+  @media (min-width: 600px) {
+    nav {
+      flex-direction: row;
+    }
+    .welcome__logo {
+      max-width: 50px;
+      height: auto;
+    }
+
+    menu {
+      margin-left: auto;
+    }
+
+    .welcome__content {
+      margin: 0 10rem;
+      flex-flow: row-reverse;
+      justify-content: space-around;
+      font-size: var(--size-2);
+
+      .welcome__avatar {
+        max-width: max(200px, 15%);
+      }
     }
   }
 }
@@ -98,7 +125,7 @@ body {
   margin: var(--size-1) 0;
 
   h2 {
-    font-size: var(--size-15);
+    font-size: var(--size-17);
     color: var(--clr-accent);
     margin-bottom: var(--size-1);
   }
@@ -106,7 +133,7 @@ body {
   .articles__container {
     display: flex;
     flex-flow: column wrap;
-    gap: var(--size-1);
+    gap: var(--size-2);
 
     article {
       padding: var(--size-1);
@@ -140,7 +167,7 @@ body {
 
   h2 {
     color: var(--clr-accent);
-    font-size: var(--size-15);
+    font-size: var(--size-17);
     margin: var(--size-1) 0 var(--size-2) 0;
   }
 
@@ -150,7 +177,6 @@ body {
     p {
       margin-bottom: var(--size-1);
     }
-
     margin-bottom: var(--size-3);
   }
 }
@@ -180,5 +206,23 @@ footer {
   &:hover {
     transform: translateY(-5px);
     transition: 200ms ease-in-out;
+  }
+}
+
+@media (min-width: 600px) {
+  .articles__section {
+    h2 {
+      margin: var(--size-2) 0;
+    }
+    .articles__container {
+      max-width: 80%;
+      flex-flow: row;
+    }
+  }
+  .about__section {
+    margin-top: var(--size-2);
+    p {
+      max-width: 60ch;
+    }
   }
 }
